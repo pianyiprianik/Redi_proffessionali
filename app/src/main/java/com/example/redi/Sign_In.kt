@@ -17,11 +17,13 @@ class Sign_In : AppCompatActivity() {
         sign_up.setOnClickListener {
             val intent = Intent(this, Sign_Up::class.java)
             startActivity(intent)
+            overridePendingTransition(0, 0)
         }
 
         forgot_password.setOnClickListener {
             val intent = Intent(this, Forgot_password::class.java)
             startActivity(intent)
+            overridePendingTransition(0, 0)
         }
     }
 }

@@ -16,11 +16,13 @@ class Onboarding4 : AppCompatActivity() {
         skip.setOnClickListener {
             val intent = Intent(this, Onboarding3::class.java)
             startActivity(intent)
+            overridePendingTransition(0, 0)
         }
 
         next.setOnClickListener {
             val intent = Intent(this, Onboarding3::class.java)
             startActivity(intent)
+            overridePendingTransition(0, 0)
         }
     }
 }

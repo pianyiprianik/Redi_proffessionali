@@ -17,11 +17,13 @@ class Onboarding3 : AppCompatActivity() {
         sign_up.setOnClickListener {
             val intent = Intent(this, Sign_Up::class.java)
             startActivity(intent)
+            overridePendingTransition(0, 0)
         }
 
        sign_in.setOnClickListener {
             val intent = Intent(this, Sign_In::class.java)
             startActivity(intent)
+           overridePendingTransition(0, 0)
         }
     }
 }
